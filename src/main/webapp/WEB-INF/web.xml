@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+    <!--
+        springNVC 默认的配置文件根目录在WEB-INF下的[servlet-name]-servlet.xml文件中，想在其他位置需要自行配置
+    -->
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <!--
+      这里注意，有三种写法，下面分别解释
+      /*  拦截所有的请求，包括静态资源（jsp/js/css/...）
+      *.action 或者*.do  拦截指定后缀的请求（以.action或者.do结尾的请求）
+      /   拦截除了jsp以外的所有请求，包括静态资源（js/css/...）
+    -->
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+</web-app>

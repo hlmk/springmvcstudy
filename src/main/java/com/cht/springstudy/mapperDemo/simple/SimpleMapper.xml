@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="simpleMapper" class="com.cht.springstudy.mapperDemo.simple.SimpleMapper"></bean>
+
+    <!--
+        简单的url映射器
+        SimpleUrlHandlerMapping
+        可以将多个url指到同一个action去处理
+    -->
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <!--第一种方式-->
+        <property name="mappings">
+            <props>
+                <prop key="/addUrl">simpleMapper</prop>
+                <prop key="/deleteUrl">simpleMapper</prop>
+                <prop key="/editUrl">simpleMapper</prop>
+            </props>
+        </property>
+    </bean>
+
+    
+
+</beans>

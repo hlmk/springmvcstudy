@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--映射器练习
+        使用 对象名映射 时，对象配置时的name属性必须为 "/xxx"加后缀名 的形式，即 对象名 即为访问的 URL名
+    -->
+    <bean name="/beanName.action" class="com.cht.springstudy.mapperDemo.BeanName.BeanNameMapper"></bean>
+
+
+    <!--配置BeanNameUrlHandlerMapping映射器
+           BeanNameUrlHandlerMapping 默认控制器，方式是将表现层的url和bean name绑定在一起
+    -->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+
+</beans>

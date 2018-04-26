@@ -8,6 +8,14 @@
     <!--指定跳转关系
         springMVC默认是根据bean的name属性名来确定访问路径，再通过bean的全类名反射找到controller
     -->
-    <bean name="/hello.action" class="com.cht.springstudy.dispatcherDemo.DispatcherDemo"></bean>
+    <!--<bean name="/hello.action" class="com.cht.springstudy.dispatcherDemo.DispatcherDemo"></bean>-->
+
+    <!--BeanNameUrlHandlerMapping demo-->
+    <!--<import resource="com/cht/springstudy/mapperDemo/BeanName/beanNameMapper.xml"/>-->
+
+    <!--SimpleUrlHandlerMapping-->
+    <import resource="com/cht/springstudy/mapperDemo/simple/SimpleMapper.xml"/>
+
+
 
 </beans>

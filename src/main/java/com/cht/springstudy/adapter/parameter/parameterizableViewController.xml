@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+        参数字符控制器
+
+        开发中经常遇到一个场景：
+            项目规定所有的Url都必须为.action结尾，但是我有一个html的页面就是一个普通页面。但是又不能直接暴漏这个资源（xxx.html直接访问）.这样的话，通常人们就想到，
+            我写一个Controller类来实现就可以了。然后写一个方法，返回这个页面。
+
+            但是今天我们用SpringMVC的一个方案：
+                ParameterizableViewController
+                org.springframework.web.servlet.mvc.ParameterizableViewController
+                产生同样的效果，但是我们只需要在配置文件中去配置就可以了。
+    -->
+    <bean name="/index.action" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+        <property name="viewName" value="index"></property><!--value里面因为视图解析器里配置了真实路径的前缀和后缀，所以这里写的是逻辑路径名称-->
+    </bean>
+
+
+</beans>

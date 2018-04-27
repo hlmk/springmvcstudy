@@ -36,7 +36,7 @@ public class BeanNameMapper implements Controller {
         System.out.println("进入beanName适配器...");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("messege","BeanName适配器...");
-        modelAndView.setViewName("/jsp/beanNameDemo.jsp");
+        modelAndView.setViewName("/jsp/success.jsp");
         return modelAndView;
     }
 }

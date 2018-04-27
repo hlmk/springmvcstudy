@@ -10,12 +10,29 @@
     -->
     <!--<bean name="/hello.action" class="com.cht.springstudy.dispatcherDemo.DispatcherDemo"></bean>-->
 
-    <!--BeanNameUrlHandlerMapping demo-->
+    <!--映射器之BeanNameUrlHandlerMapping demo-->
     <!--<import resource="com/cht/springstudy/mapperDemo/BeanName/beanNameMapper.xml"/>-->
 
-    <!--SimpleUrlHandlerMapping-->
-    <import resource="com/cht/springstudy/mapperDemo/simple/SimpleMapper.xml"/>
+    <!--映射器之SimpleUrlHandlerMapping-->
+    <!--<import resource="com/cht/springstudy/mapperDemo/simple/SimpleMapper.xml"/>-->
+
+    
+    
+    
+    
+    
+    <!--适配器之simpleControllerHanderAdapter demo-->
+    <!--<import resource="com/cht/springstudy/adapter/simple/simpleControllerHanderAdapter.xml"/>-->
+    <!--适配器之parameterizableViewController demo-->
+    <import resource="com/cht/springstudy/adapter/parameter/parameterizableViewController.xml"/>
+    
+    
+
+    <!--视图解析器之InternalResourceViewResolver-->
+    <import resource="com/cht/springstudy/viewResolver/InternalResourceViewResolver.xml"/>
 
 
-
+    
+    
+    
 </beans>

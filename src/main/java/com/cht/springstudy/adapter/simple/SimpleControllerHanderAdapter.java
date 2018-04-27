@@ -1,4 +1,4 @@
-package com.cht.springstudy.mapperDemo.simple;
+package com.cht.springstudy.adapter.simple;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
@@ -7,19 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * com.cht.springstudy.mapperDemo.simple
+ * com.cht.springstudy.adapter
  *
  * @author chenhaiting
- * @name SimpleMapper
+ * @name SimpleControllerHanderAdapter
  * @description
- * @date 2018-04-26 17:26
+ * @date 2018-04-26 19:47
  * <p>
  * <p>
  * Copyright (c) 2018 武汉众汇信资产管理有限公司 版权所有
  */
-public class SimpleMapper implements Controller {
-
-
+public class SimpleControllerHanderAdapter implements Controller {
     /**
      * Process the request and return a ModelAndView object which the DispatcherServlet
      * will render. A {@code null} return value is not an error: it indicates that
@@ -33,10 +31,10 @@ public class SimpleMapper implements Controller {
      */
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println("to SimpleMapper Controller");
+        System.out.println("SimpleControllerHanderAdapter");
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("messege","SimpleMapper success");
-        modelAndView.setViewName("/jsp/success.jsp");
+        modelAndView.addObject("messege","简单的实现了controller接口的控制器...");
+        modelAndView.setViewName("success");
         return modelAndView;
     }
 }

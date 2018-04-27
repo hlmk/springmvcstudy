@@ -24,13 +24,16 @@
     <!--适配器之simpleControllerHanderAdapter demo-->
     <!--<import resource="com/cht/springstudy/adapter/simple/simpleControllerHanderAdapter.xml"/>-->
     <!--适配器之parameterizableViewController demo-->
-    <import resource="com/cht/springstudy/adapter/parameter/parameterizableViewController.xml"/>
-    
+    <!--<import resource="com/cht/springstudy/adapter/parameter/parameterizableViewController.xml"/>-->
+    <!--post中文乱码 demo-->
+    <import resource="com/cht/springstudy/postChineseRandomCode/postChineseRandomCodeDemo.xml"/>
     
 
     <!--视图解析器之InternalResourceViewResolver-->
     <import resource="com/cht/springstudy/viewResolver/InternalResourceViewResolver.xml"/>
 
+    
+    
 
     
     

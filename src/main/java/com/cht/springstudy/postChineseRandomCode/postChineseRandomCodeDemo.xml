@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--中文乱码配置 demo-->
+    <bean name="/postCode.action" class="com.cht.springstudy.postChineseRandomCode.PostChineseRandomCodeDemo"></bean>
+
+    <!--配置跳转form jsp 的 action-->
+    <bean name="/toForm.action" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+        <property name="viewName" value="formList"/>
+    </bean>
+
+</beans>

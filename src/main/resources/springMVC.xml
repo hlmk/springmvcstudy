@@ -10,10 +10,10 @@
     -->
     <!--<bean name="/hello.action" class="com.cht.springstudy.dispatcherDemo.DispatcherDemo"></bean>-->
 
-    <!--映射器之BeanNameUrlHandlerMapping demo-->
+    <!--映射器之BeanNameUrlHandlerMapping Demo-->
     <!--<import resource="com/cht/springstudy/mapperDemo/BeanName/beanNameMapper.xml"/>-->
 
-    <!--映射器之SimpleUrlHandlerMapping-->
+    <!--映射器之SimpleUrlHandlerMappostChineseRandomCodeDemo.xmlping-->
     <!--<import resource="com/cht/springstudy/mapperDemo/simple/SimpleMapper.xml"/>-->
 
     
@@ -21,11 +21,11 @@
     
     
     
-    <!--适配器之simpleControllerHanderAdapter demo-->
+    <!--适配器之simpleControllerHanderAdapter Demo-->
     <!--<import resource="com/cht/springstudy/adapter/simple/simpleControllerHanderAdapter.xml"/>-->
-    <!--适配器之parameterizableViewController demo-->
+    <!--适配器之parameterizableViewController Demo-->
     <!--<import resource="com/cht/springstudy/adapter/parameter/parameterizableViewController.xml"/>-->
-    <!--post中文乱码 demo-->
+    <!--post中文乱码 Demo-->
     <import resource="com/cht/springstudy/postChineseRandomCode/postChineseRandomCodeDemo.xml"/>
     
 
@@ -34,6 +34,12 @@
 
     
     
+    <!--测试第一个springMVC注解程序-->
+    <!--<import resource="com/cht/springstudy/annotation/demo.xml"/>-->
+
+
+    <!--json参数和返回json数据demo-->
+    <import resource="com/cht/springstudy/json/jsonText.xml"/>
 
     
     

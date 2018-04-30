@@ -8,7 +8,7 @@
 
 
     <!--
-        SimpleControllerHandlerAdapter demo
+        SimpleControllerHandlerAdapter Demo
         寻找实现了controller接口的实现类
     -->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"></bean>

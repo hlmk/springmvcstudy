@@ -1,0 +1,7 @@
+1.配置web.xml的核心处理器
+2.controller类下面加注解@controller,
+    方法上加注解@requestMapping("访问路径")参考Demo.class中的hello方法
+3.spring文件中添加context上下文并开启扫描
+     <context:component-scan base-package="要扫描的注解所在的包"/>
+     参考demo.xml中的配置
+4.启动项目测试
